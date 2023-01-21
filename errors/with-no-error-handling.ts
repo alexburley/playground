@@ -16,8 +16,6 @@ class DBAdapter {
       verified: true,
     }; // 200
   }
-
-  save(item: ModelItem): void {}
 }
 
 class DomainAdapter {
@@ -33,7 +31,7 @@ class DomainAdapter {
   }
 }
 
-class HTTPEndpoint {
+export class HTTPEndpoint {
   async handleLogin(
     id: string
   ): Promise<
